@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-rendering: inherit;
+}
+
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button, textarea, select, input, a {
+    outline: none !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}

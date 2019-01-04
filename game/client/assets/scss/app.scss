@@ -1,0 +1,114 @@
+@import "./bootstrap";
+@import "./microreset";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: $color-white;
+    background-color: $color-black;
+}
+
+input[type="text"] {
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    background-color: rgba($color-primary, 0.2);
+    border: 1px solid rgba($color-primary, 0.5);
+    color: $color-primary;
+    transition:
+        color 0.2s ease-out,
+        background-color 0.5s ease-out,
+        border 0.3s ease-out
+    ;
+
+    &:hover {
+        background-color: rgba($color-primary, 0.4);
+        border: 1px solid rgba($color-primary, 0.7);
+    }
+
+    &:focus {
+        background-color: rgba($color-primary, 1);
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+button {
+    padding: 3px 13px;
+    font-size: 0.9rem;
+    background-color: rgba($color-primary, 0.2);
+    border: 1px solid rgba($color-primary, 0.5);
+    color: $color-primary;
+    transition:
+        color 0.2s ease-out,
+        background-color 0.5s ease-out,
+        border 0.3s ease-out
+    ;
+
+    &:hover {
+        background-color: rgba($color-primary, 0.4);
+        border: 1px solid rgba($color-primary, 0.7);
+    }
+
+    &:active {
+        background-color: rgba($color-primary, 1);
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+
+    .game {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .ui {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    // &__header {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 10;
+    //     padding: 5px 13px;
+    //     color: rgba($color-primary, 0.5);
+    //     background-color: rgba($color-primary, 0.25);
+    //     box-shadow: 0 3px 6px rgba(black, 0.12);
+    //     text-shadow: -1px 1px 3px rgba(black, 0.6);
+
+    //     h1 {
+    //         text-transform: uppercase;
+    //         display: inline-block;
+    //     }
+
+    //     span {
+    //         font-weight: 700;
+    //     }
+    // }
+}
+
+// .content {
+//     position: absolute;
+//     top: calc(3rem + 12px);
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+// }

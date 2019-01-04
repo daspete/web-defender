@@ -1,0 +1,36 @@
+{
+  "name": "web-defender",
+  "version": "1.0.0",
+  "description": "Hero defense game for the web",
+  "main": "server.js",
+  "author": "DasPeTe <daspetemail@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pm2 delete all; pm2 flush; BACKPACK_ENV=app:dev backpack build; node build/dev/main.js; pm2 logs",
+    "dev:api": "BACKPACK_ENV=api:dev backpack dev --inspect=0.0.0.0",
+    "dev:client": "nuxt --config-file config/client.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/style-resources": "^0.1.1",
+    "backpack-core": "^0.8.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "compression": "^1.7.3",
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "helmet": "^3.15.0",
+    "mongoose": "^5.4.1",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.3.4",
+    "pm2": "^3.2.4",
+    "sass-loader": "^7.1.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "three": "^0.99.0"
+  }
+}
